@@ -6,6 +6,7 @@ from __future__ import division
 # This function computes the Bayes Factor to evaluate evidence for or against a linear relationship
 # H0: no linear relationship
 # H1: linear relationship exists
+# For interpretation of the result see below
 
 # Usage 
 # r = correlation_coefficient from sample
