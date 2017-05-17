@@ -3,8 +3,13 @@ import math
 import scipy.integrate as integrate
 from __future__ import division
 
-# This function computes the Bayes Factor to evaluate evidence for or against the null hypothesis for correlation in linear models. 
-# Usage jzs_corbf(r,n) where r is the correlation coefficient, and n is the number of samples
+# This function computes the Bayes Factor to evaluate evidence for or against the null hypothesis
+# for linear models
+
+# Usage 
+# r = correlation_coeffient from sample
+# n = n_samples (e.g. datapoints)
+# BF10 = jzs_corbf(r,n)
 
 def jzs_corbf(r,n):
     g2 = lambda g: (1 + g)**((n - 2)/2) * (1+(1-r**2)*g)**(-(n-1)/2) * g**(-3/2) * np.exp(-n/(2*g))
@@ -12,7 +17,6 @@ def jzs_corbf(r,n):
     return BF10
     
 # Interpretation:
-# Bayes factor BF10 Interpretation
 #       >   100   Decisive evidence for H1
 # 30    -   100   Very Strong evidence for H1
 # 10    -   30    Strong evidence for H1
