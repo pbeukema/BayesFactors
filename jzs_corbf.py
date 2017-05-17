@@ -3,11 +3,12 @@ import math
 import scipy.integrate as integrate
 from __future__ import division
 
-# This function computes the Bayes Factor to evaluate evidence for or against the null hypothesis
-# for linear models
+# This function computes the Bayes Factor to evaluate evidence for or against a linear relationship
+# H0: no linear relationship
+# H1: linear relationship
 
 # Usage 
-# r = correlation_coeffient from sample
+# r = correlation_coefficient from sample
 # n = n_samples (e.g. datapoints)
 # BF10 = jzs_corbf(r,n)
 
