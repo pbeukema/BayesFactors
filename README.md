@@ -1,2 +1,5 @@
 # bayes_factors
-Functions for computing bayes factors in python for various models that have also been implemented in R
+Python fuctions for computing some of the most often used bayes factors for data analysis. 
+
+Because p-values are worse than useless. 
+
