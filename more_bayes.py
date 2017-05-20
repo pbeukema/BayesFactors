@@ -17,7 +17,13 @@ def jzs_corbf(r,n):
     g2 = lambda g: (1 + g)**((n - 2)/2) * (1+(1-r**2)*g)**(-(n-1)/2) * g**(-3/2) * np.exp(-n/(2*g))
     BF10 = (np.sqrt(n/2)/math.gamma(1/2))* integrate.quad(g2, 0,np.inf)[0]
     return BF10
+
+# Model Comparisons using SSE/SST:
+def 
     
+    return BF10
+
+def BF10_toPostH0():
 # Interpretation:
 #       >   100   Decisive evidence for H1
 # 30    -   100   Very Strong evidence for H1
