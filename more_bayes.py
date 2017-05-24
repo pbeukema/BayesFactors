@@ -45,8 +45,8 @@ def eval_null(SSE1, SSE0, k1,k0, n)
     # Note that BF01 != BF10
     
     # Usage
-    # SSE1: 
-    # SSE0: sum of squared errors 
+    # SSE1: sum of squared errors for H1 (alternative)
+    # SSE0: sum of squared errors for H0 (null)
     # k1: # parameters for alternative model
     # k0: # parameters for null model
     # n:number of subjects
@@ -67,5 +67,6 @@ def eval_null(SSE1, SSE0, k1,k0, n)
     BF01 = np.exp(deltaBIC10/2)
     return BF01
 
+## add posterior prob calculation to above
 def BF01_toPostH0():
     
