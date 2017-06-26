@@ -67,6 +67,5 @@ def eval_null(SSE1, SSE0, k1,k0, n)
     BF01 = np.exp(deltaBIC10/2)
     return BF01
 
-## add posterior prob calculation to above
-def BF01_toPostH0():
+
     
